@@ -1,18 +1,81 @@
+.container {
+    min-width: 900px;
+    min-height: 50px;
+}
+
 img {
-    padding-top: 109px;
+    padding-top: 120px;
     display: block;
     margin: 0 auto;
+}
+
+a {
+    color: rgb(44, 44, 44);
+    text-decoration: none;
 }
 
 input {
     display: block;
     margin: 0 auto;
-    width: 537px;
-    border-radius: 15px;
-    height: 35px;
-    margin-top: 20px;
-    border: 1px solid rgba(100, 100, 100, 0.35);
-    text-indent: 35px;
+    width: 500px;
+    border-radius: 25px;
+    height: 45px;
+    margin-top: 27px;
+    border: .5px solid rgba(100, 100, 100, 0.212);
+    text-indent: 45px;
+}
+
+.magnifyContainer {
+    min-height: 45px;
+    min-width: 750px;
+    position: relative;
+}
+
+.boxes {
+    display: inline-block;
+    height: 16px;
+    width: 40px;
+    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    background-position: 25% 86%;
+    opacity: .5;
+    padding-left: -5px;
+    padding-right: -15px;
+}
+
+.boxes:hover {
+    opacity:1;
+}
+
+#signIn {
+    margin-top:-50px;
+    width:70px;
+    height: 30px;
+    background-color: rgb(35, 133, 245);
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+.topBarLeft{
+    float:left;
+    height: 25px;
+}
+.topBarRight {
+    float: right;
+    height: 25px;
+}
+
+li {
+    float: left;
+    font-size: 12px;
+    padding-right: 8px;
+    padding-left: 10px;
+    color: rgb(44, 44, 44);
 }
 
 p {
@@ -20,16 +83,21 @@ p {
     font-size: 12px;
     padding-right: 8px;
     padding-left: 10px;
-    color: rgb(102, 102, 102);
+    color: rgb(44, 44, 44);
 }
 
-p:hover {
+li:hover {
     text-decoration: underline;
 }
 
 input:hover {
-    box-shadow: 1px 1px 10px 3px rgba(128, 128, 128, 0.5);
+    box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.5);
 }
+
+input:focus {
+    box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.5);
+}
+
 
 .button {
     text-align: center;
@@ -38,16 +106,39 @@ input:hover {
 }
 
 button {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(255, 255, 255);
     border-radius: 3px;
-    border: 1px solid rgba(100, 100, 100, 0);
+    border: 1px solid rgba(100, 100, 100, 0.315);
     height: 35px;
-    box-sizing: border-box;
-    color: grey;
+    color: rgb(0, 109, 252);
+    margin-right: 20px;
+    width: 140px;
+    font-size: 14px;
 }
 
-button:hover {
-    border: 1px solid rgb(175, 175, 175);
-    color: black;
+.searchButton:hover {
+    background-color: rgba(2, 112, 255, 0.116);
+    cursor: pointer;
+}
+
+.footerBar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 900px;
+    min-height: 35px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.144);
+    color: rgba(128, 128, 128, 0.123);
+}
+
+.bottomBarLeft {
+    float: left;
+    margin-left: 20px;
+}
+
+.bottomBarRight {
+    float: right;
+    margin-right: 30px;
 }
 
